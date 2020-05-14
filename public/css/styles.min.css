@@ -111,7 +111,7 @@ li {
     width: 40px;
 }
 .section-title span {
-    color: #969696;
+    color: #5c5c5c;
     font: 500 14px open sans,sans-serif;
     padding-right: 10px;
 }
@@ -126,9 +126,14 @@ li {
     padding: 27px 0 0;
 }
 
+.badge {
+    font-size: large;
+    background-color: #007a99;
+}
+
 .user-pic {
     border-radius: 140px;
-    width: 60%;
+    width: 80%;
 }
 .sidebar .nav {
     padding: 20px 30px;
@@ -144,7 +149,7 @@ li {
     z-index: 998;
 }
 .fixed {
-    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 10px 3px rgba(110, 99, 0, 0.815);
     left: 30px;
     position: fixed;
     right: 30px;
