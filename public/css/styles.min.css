@@ -227,11 +227,11 @@ li {
 }
 .skills {
    
-    margin-top: 37px;
+    margin-top: 20px;
     width: 100%;
 }
 .skill-outer {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .skill-outer h4 span {
@@ -282,6 +282,10 @@ li {
     background-color: rgba(0, 0, 0, 0.0);
     max-height: 50px;
     width:auto;
+    border: none;
+}
+.thumbnails {text-align: center;}
+.thumbnails .thumbnail {display: inline-block; margin: 0 0px; border: none;
 }
 
 .services-background {
