@@ -272,9 +272,22 @@ li {
 .progress-bar {
     background: #00a6c4 none repeat scroll 0 0;
 }
+
+.tech-background {
+    margin-bottom: -20px;
+    padding: 100px 0 0;
+}
+
+.img-thumbnail {
+    background-color: rgba(0, 0, 0, 0.0);
+    max-height: 50px;
+    width:auto;
+}
+
 .services-background {
     margin-bottom: -20px;
     padding: 100px 0 0;
+    border: none;
 }
 .servicesWrapper {
     padding: 0;
