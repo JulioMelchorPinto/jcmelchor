@@ -8,10 +8,10 @@ h3, h4 {
     margin: 0 0 10px;
 }
 a{
-	color:#0366a0;
+	color:#232323;
 }
 a:hover{
-	color:#704b07;
+	color:#9c27b0;
 }
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
     outline: none;
@@ -34,12 +34,12 @@ a:hover{
 }
 
 .greynum {
-    color: rgba(0, 0, 0, 0.541);
+    color: rgba(0, 0, 0, 0.36);
     float: left;
     line-height: 28px
 }
 .sidebarWrapper {
-	background: #083e5fe3;
+	background: #9c27b0;
 	text-align: center;
 	height: 100%;
 }
@@ -57,13 +57,13 @@ a:hover{
     text-align: center;
 }
 body {
-    color: #333333;
+    color: #3c3c3c;
     font: 300 14px open sans,sans-serif;
     letter-spacing: 0.5px;
     overflow-x: hidden;
 }
 h1, h2, h3, h4, h5 {
-    color: #205c14;
+    color: #232323;
 	font-family: 'Titillium Web', sans-serif;
 }
 h1 {
@@ -102,7 +102,7 @@ li {
     margin-bottom: 50px;
 }
 .section-title h2::after {
-   background: #007a99 none repeat scroll 0 0;
+   background: #9c27b0 none repeat scroll 0 0;
     content: "";
     display: table;
     height: 2px;
@@ -111,7 +111,7 @@ li {
     width: 40px;
 }
 .section-title span {
-    color: #5c5c5c;
+    color: #969696;
     font: 500 14px open sans,sans-serif;
     padding-right: 10px;
 }
@@ -121,19 +121,14 @@ li {
     top: 0;
 }
 .sidebarWrapper {
-    box-shadow: 0 3px 10px 3px rgba(1, 80, 73, 0.603);
+    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 27px 0 0;
 }
 
-.badge {
-    font-size: large;
-    background-color: #007a99;
-}
-
 .user-pic {
     border-radius: 140px;
-    width: 80%;
+    width: 60%;
 }
 .sidebar .nav {
     padding: 20px 30px;
@@ -149,7 +144,7 @@ li {
     z-index: 998;
 }
 .fixed {
-    box-shadow: 0 3px 10px 3px rgba(110, 99, 0, 0.815);
+    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
     left: 30px;
     position: fixed;
     right: 30px;
@@ -207,7 +202,7 @@ li {
     transition: all 0.1s linear 0s;
 }
 .sidebar .nav li a:hover, .sidebar .nav li.active a {
-    color: #205c14;
+    color: #9c27b0;
     opacity: unset;
 }
 
@@ -270,24 +265,11 @@ li {
     margin: 0;
 }
 .progress-bar {
-    background: #00a6c4 none repeat scroll 0 0;
+    background: #9c27b0 none repeat scroll 0 0;
 }
-
-.tech-background {
-    margin-bottom: -20px;
-    padding: 100px 0 0;
-}
-
-.img-thumbnail {
-    background-color: rgba(0, 0, 0, 0.0);
-    max-height: 50px;
-    width:auto;
-}
-
 .services-background {
-    margin-bottom: -20px;
+    margin-bottom: -30px;
     padding: 100px 0 0;
-    border: none;
 }
 .servicesWrapper {
     padding: 0;
@@ -307,6 +289,10 @@ li {
 }
 .portfolio-background {
     padding: 100px 0 0;
+}
+.portfolio-background .section-title {
+	display: inline-table;
+	width: 100%;
 }
 .portfolio-background .section-title h2 {
     margin: 0;
@@ -351,7 +337,7 @@ li {
     width: 100%;
 }
 .imageHover {
-    background: rgba(23, 82, 5, 0.445) none repeat scroll 0 0;
+    background: rgba(156, 39, 176, 0.9) none repeat scroll 0 0;
     color: #fff;
     height: 100%;
     left: 0;
@@ -420,7 +406,7 @@ button.mfp-close:hover {
     background: #fff none repeat scroll 0 0;
     border-radius: 50%;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    color: #1bb11b;
+    color: #9c27b0;
     float: left;
     font-size: 29px;
     height: 100px;
@@ -448,7 +434,7 @@ button.mfp-close:hover {
 }
 .post-ver-date {
     bottom: 13px;
-    color: rgb(221, 221, 221);
+    color: #fff;
     left: 15px;
     position: absolute;
     z-index: 9999;
@@ -477,7 +463,7 @@ button.mfp-close:hover {
     transition: all 0.1s linear 0s;
 }
 .blog-post a:focus, .blog-post a:hover {
-    border-color: #16464d;
+    border-color: #141414;
 }
 .testimonial-background {
     padding: 100px 0 0;
@@ -671,8 +657,14 @@ textarea {
 }
 
 
+
+
+
+
+
+
 .top-br, .left-br, .bottom-br, .right-br {
-    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
     position: fixed;
     z-index: 9;
 }
@@ -687,17 +679,17 @@ textarea {
     height: 100%;
     left: 0;
     top: 0;
-    width: 20px;
+    width: 30px;
 }
 .fixed-left-contact {
     height: 100%;
     left: 0;
     position: fixed;
-    width: 20px;
+    width: 30px;
     z-index: 100;
 }
 .fixed-left-contact p {
-    left: -56px;
+    left: -46px;
     letter-spacing: 2px;
     position: absolute;
     top: 50%;
@@ -776,5 +768,5 @@ textarea {
     background: #ca3737 none repeat scroll 0 0;
 }
 textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, .form-control[type="text"]:focus, .form-control[type="password"]:focus, .form-control[type="email"]:focus, .form-control[type="tel"]:focus, .form-control[contenteditable]:focus {
-    box-shadow: 0 -2px 0 #288a02 inset;
+    box-shadow: 0 -2px 0 #8c17a0 inset;
 }
