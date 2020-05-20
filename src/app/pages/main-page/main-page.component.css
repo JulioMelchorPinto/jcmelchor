@@ -70,7 +70,7 @@ li {
 }
 .service-box {
     margin-bottom: 30px;
-    width: auto;
+    width: 90%;
 }
 .service-box div:first-child {
     float: left;
