@@ -1,0 +1,55 @@
+ <!-- Sidebar -->
+ <div class="container">
+    <div class="row">
+        <div class="col-xs-12 sidebar">
+            <div class="col-md-2 sidebarWrapper">
+                <!-- Avatar -->
+                <img class="user-pic" src="assets/images/avatar.jpg" alt="">
+                <div class="signature">
+                    <img class="img-responsive" alt="signature" src="assets/images/firma-blanco-jcmp.png">
+                </div>
+                <!-- Menu -->
+                <div class="menu">
+                    <div class="toggle-btn">
+                        <button class="btn btn-dark"
+                         (click)="isCollapsed = !isCollapsed"
+                         [attr.aria-expanded]="!isCollapsed"
+                         aria-controls="collapseBasic">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    </div>
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#about">Informaci&oacute;n</a>
+                        </li>
+                        <li>
+                            <a href="#services">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#tech">Entornos de trabajo</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#education">Educaci&oacute;n</a>
+                        </li>
+                        <li>
+                            <a href="#industry">Industria</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Publicaciones</a>
+                        </li>
+                        <li>
+                            <a href="#testimonial">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div><!-- end Menu -->
+            </div>
+        </div>
+    </div><!-- end row -->
+</div><!-- end container -->
+<!-- end Sidebar -->

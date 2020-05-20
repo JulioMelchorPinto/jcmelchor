@@ -10,11 +10,7 @@ a:hover{
     float: left;
     line-height: 28px
 }
-.sidebarWrapper {
-	background: #083e5fe3;
-	text-align: center;
-	height: 100%;
-}
+
 body {
     color: #333333;
     font: 300 14px open sans,sans-serif;
@@ -22,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 h1, h2, h3, h4, h5 {
-    color: #205c14;
+    color: #025d74;
 	font-family: 'Titillium Web', sans-serif;
 }
 .section-title h2::after {
@@ -40,67 +36,14 @@ h1, h2, h3, h4, h5 {
     padding-right: 10px;
 }
 
-.sidebarWrapper {
-    box-shadow: 0 3px 10px 3px rgba(1, 80, 73, 0.603);
-    color: #fff;
-    padding: 27px 0 0;
-}
 
-.badge {
-    font-size: large;
-    background-color: #007a99;
-}
 
-.user-pic {
-    border-radius: 140px;
-    width: 80%;
-}
-.fixed {
-    box-shadow: 0 3px 10px 3px rgba(110, 99, 0, 0.815);
-    left: 30px;
-    position: fixed;
-    right: 30px;
-    top: 0;
-    width: auto;
-}
-.sidebar .nav li a:hover, .sidebar .nav li.active a {
-    color: #205c14;
-    opacity: unset;
-}
-.progress-bar {
-    background: #00a6c4 none repeat scroll 0 0;
-}
-.tech-background {
-    margin-bottom: -20px;
-    padding: 100px 0 0;
-}
 
-.img-thumbnail {
-    background-color: rgba(0, 0, 0, 0.0);
-    max-height: 50px;
-    width:auto;
-    border: none;
-}
-.thumbnails {text-align: center;}
-.thumbnails .thumbnail {display: inline-block; margin: 0 0px; border: none;
-}
-.services-background {
-    margin-bottom: -20px;
-    padding: 100px 0 0;
-    border: none;
-}
-.resume-box div:first-child {
-    background: #fff none repeat scroll 0 0;
-    border-radius: 50%;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    color: #1bb11b;
-    float: left;
-    font-size: 29px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    width: 100px;
-}
+
+
+
+
+
 .post-ver-date {
     bottom: 13px;
     color: rgb(221, 221, 221);

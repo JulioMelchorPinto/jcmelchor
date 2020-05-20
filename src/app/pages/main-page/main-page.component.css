@@ -1,4 +1,217 @@
+body {
+    background-color: #f5f5f5;
+}
+h1 {
+    font: 900 24px/36px "Titillium Web",serif;
+    margin: 0 0 15px;
+}
+h2 {
+    font: 200 38px "Titillium Web",serif;
+}
+h3 {
+    font: 900 16px "Titillium Web",serif;
+    letter-spacing: 1.5px;
+}
+h4 {
+    font: 900 13px "Titillium Web",serif;
+}
+h1, h2 {
+    letter-spacing: 1px;
+}
+h3, h4 {
+    margin: 0 0 10px;
+}
+p {
+    line-height: 24px;
+    margin: 0;
+}
+a{
+	color:#232323;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+a:hover{
+	color:#9c27b0;
+}
+li {
+    list-style-type: none;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+    outline-offset: 0px;
+}
+.btn {
+    border-radius: 50px;
+    font-family: Titillium Web;
+}
+.row, li, ul {
+    margin: 0;
+    padding: 0;
+}
+.portfolio-filter ul li, h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.badge {
+    font-size: large;
+}
+.nav-extra {
+    float: right;
+}
 
-section {
-    padding-left: 300px;
+/* Servicios */
+.services-background {
+    margin-bottom: 0px;
+    padding: 100px 0 0;
+}
+.servicesWrapper {
+    padding: 0;
+}
+.service-box {
+    margin-bottom: 30px;
+    width: auto;
+}
+.service-box div:first-child {
+    float: left;
+    width: 20px;
+}
+.service-box i {
+    font-size: 36px;
+}
+.service-box div:last-child {
+    padding-left: 50px;
+}
+
+
+/* Entorno de trabajo */
+.tech-background {
+    margin-bottom: 50px;
+    padding: 100px 0 0;
+}
+.techWrapper {
+    padding: 0;
+}
+.tech-box {
+    margin-bottom: 30px;
+    width: auto;
+}
+.thumbnails {
+    text-align: center;
+}
+.thumbnails .thumbnail {
+    display: inline-block; margin: 0 0px; border: none;
+}
+.img-thumbnail {
+    background-color: rgba(0, 0, 0, 0.0);
+    max-height: 50px;
+    width:auto;
+    border: none;
+}
+
+
+/* Industria y educación */
+.resume-background {
+    padding: 100px 0 0;
+}
+.resumeWrapper {
+    padding: 0;
+}
+.resume-box {
+    margin-bottom: 30px;
+}
+.resume-box:last-child {
+    margin: 0;
+}
+
+.resume-box div:first-child {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #1bb11b;
+    float: left;
+    font-size: 29px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+}
+.resume-box div:last-child {
+    padding-left: 130px;
+}
+.resume-box span {
+    color: #a0a0a0;
+    display: block;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+/* Publicaciones */
+.blog-post a, .submit-style {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.1s linear 0s;
+}
+button.mfp-close:hover {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    opacity: 1;
+}
+.popup-box {
+    background: #fff none repeat scroll 0 0;
+    margin: 0 auto;
+    max-width: 640px;
+    position: relative;
+    width: auto;
+}
+.popup-box div {
+    padding: 30px;
+}
+.popup-box img {
+    width: 100%;
+}
+
+.blog-background {
+    padding: 100px 0 0;
+}
+.blogWrapper {
+    padding: 0;
+}
+.blog-img {
+    position: relative;
+}
+.post-ver-date {
+    bottom: 13px;
+    color: #fff;
+    left: 15px;
+    position: absolute;
+    z-index: 9999;
+}
+.blog-dis > h3 {
+    margin: 15px 0 9px;
+}
+.blog-post.row, .copyright .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+.blog-post {
+    margin-bottom: 50px;
+}
+.blog-post:last-child {
+    margin: 0;
+}
+.blog-post img {
+    width: 100%;
+}
+.blog-post h3 {
+    font-size: 20px;
+}
+.blog-post a {
+    margin-top: 25px;
+    transition: all 0.1s linear 0s;
+}
+.blog-post a:focus, .blog-post a:hover {
+    border-color: #141414;
+}
+.blog-post::after, .lines::after, .lines::before, .skill-outer h4 span::before, .testimonial-content h4 span::before {
+    content: "";
 }

@@ -1,0 +1,123 @@
+.sidebar {
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+.sidebarWrapper {
+	background: #083e5fe3;
+	text-align: left;
+    height: 100%;
+    box-shadow: 0 3px 10px 3px rgba(1, 80, 73, 0.603);
+    color: #fff;
+    padding: 27px 0 0;
+}
+.user-pic {
+    border-radius: 140px;
+    width: 95%;
+    padding-left: 10px;
+}
+.fixed {
+    box-shadow: 0 3px 10px 3px rgba(110, 99, 0, 0.815);
+    left: 30px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    width: auto;
+}
+
+.sidebar .nav {
+    padding: 20px 30px;
+	background: #fff none repeat scroll 0 0;
+    padding: 20px 30px;
+}
+.toggle-btn {
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    width: 100%;
+    z-index: 998;
+    background: #141414 none repeat scroll 0 0;
+    text-align: center;
+}
+
+.toggle-btn:focus {
+    outline: 0 none;
+}
+
+.fixed {
+    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
+    left: 30px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    width: auto;
+}
+.lines, .lines::after, .lines::before {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+}
+.lines {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+}
+.lines::after, .lines::before {
+    left: 0;
+    position: absolute;
+    transition: all 0.2s linear 0s;
+}
+.sidebar .nav li a, .social-media ul li a {
+    transition: all 0.5s linear 0s;
+}
+.lines::before {
+    top: 5px;
+}
+.lines::after {
+    top: -5px;
+}
+
+
+.sidebar .nav li {
+    font: 900 13px "Titillium Web",serif;
+    padding: 10px 0;
+    display: list-item;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.sidebar .nav li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #232323;
+    padding: 0;
+    transition: all 0.1s linear 0s;
+}
+.sidebar .nav li a:hover, .sidebar .nav li.active a {
+    color: #3c5238;
+    opacity: unset;
+}
+.signature {
+    text-align: center;
+    padding: 9px 0 12px;
+    
+}
+.signature .img-responsive {
+    margin: auto;
+    width: 95%;
+}
+
+.toggle-close .lines {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.toggle-close .lines::after, .toggle-close .lines::before {
+    top: 0;
+    transform-origin: 50% 50% 0;
+}
+.toggle-close .lines::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+.toggle-close .lines::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+}

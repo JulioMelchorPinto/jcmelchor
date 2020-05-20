@@ -36,18 +36,20 @@
     margin-right: 20px;
 }
 }
+/*
 @media only screen and (min-width: 1600px) {
-.aboutWrapper, .blogWrapper, .contactWrapper, .footer-background, .portfolioWrapper, .resumeWrapper, .servicesWrapper, .testimonialWrapper {
+.aboutWrapper, .blogWrapper, .contactWrapper, .tech-background, .footer-background, .techWrapper, .portfolioWrapper, .resumeWrapper, .servicesWrapper, .testimonialWrapper {
     margin-left: 30%;
     width: 70%;
 }
 }
-@media only screen and (min-width: 1920px) {
-.aboutWrapper, .blogWrapper, .contactWrapper, .footer-background, .portfolioWrapper, .resumeWrapper, .servicesWrapper, .testimonialWrapper {
+ @media only screen and (min-width: 1920px) {
+.aboutWrapper, .blogWrapper, .contactWrapper, .tech-background, .footer-background, .techWrapper, .portfolioWrapper, .resumeWrapper, .servicesWrapper, .testimonialWrapper {
     margin-left: 35%;
     width: 65%;
-}
-}
+} 
+
+}*/
 @media only screen and (max-width: 767px) {
 body {
     background-color: #fff;

@@ -1,6 +1,6 @@
 {
   "name": "jcmelchor",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,18 +9,31 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliomelchorpinto/jcmelchor.git"
+  },
+  "author": {
+    "name": "Julio Cesar Melchor Pinto",
+    "email": "julio.melchor@ciencias.unam.mx",
+    "url": "https://jcmelchor.web.app"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.7",
+    "@angular/cdk": "^9.2.4",
     "@angular/common": "~9.1.7",
     "@angular/compiler": "~9.1.7",
     "@angular/core": "~9.1.7",
+    "@angular/flex-layout": "^9.0.0-beta.31",
     "@angular/forms": "~9.1.7",
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
     "bootstrap": "4.1.1",
+    "jquery": "^1.9.1",
     "ngx-bootstrap": "^5.6.1",
+    "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

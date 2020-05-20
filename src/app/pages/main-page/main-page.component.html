@@ -9,11 +9,11 @@
 
 		<div class="left-br"></div>
 		<div class="fixed-left-contact">
-			<p>+52&nbsp;646&nbsp;1896922</p>
+			<p>+52&nbsp;(646)&nbsp;1896922</p>
 		</div>
 		<div class="fixed-right-socials">
             <ul class="list-unstiled">
-                <li><a href="https://github.com/juliomelchorpinto"><i class="fa fa-github-alt"></i></a></li>
+                <li><a href="https://github.com/juliomelchorpinto"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://facebook.com/jmelchorp"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/MelchorPinto"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://plus.google.com/u/0/106279502125173938597"><i class="fa fa-google-plus"></i></a></li>
@@ -22,57 +22,7 @@
 		        <li><a href="live:julioc.melchor"><i class="fa fa-skype"></i></a></li>
             </ul>
         </div>
-        <!-- Sidebar -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-2 sidebar">
-                    <div class="col-sm-2 sidebarWrapper">
-                        <!-- Avatar -->
-						<img class="user-pic" src="assets/images/avatar.jpg" alt="">
-						<div class="signature">
-							<img class="img-responsive" alt="signature" src="assets/images/firma-blanco-jcmp.png">
-                        </div>
-                        <button (click)="printPage()">print</button>
-                        <!-- Menu -->
-                        <div class="menu">
-                            <div class="toggle-btn">
-                                <span class="lines"></span>
-                            </div>
-                            <ul class="nav">
-                                <li class="active">
-                                    <a href="#about">Informaci&oacute;n</a>
-                                </li>
-                                <li>
-                                    <a href="#services">Servicios</a>
-                                </li>
-                                <li>
-                                    <a href="#tech">Entornos de trabajo</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio">Portafolio</a>
-                                </li>
-                                <li>
-                                    <a href="#education">Educaci&oacute;n</a>
-                                </li>
-                                <li>
-                                    <a href="#industry">Industria</a>
-                                </li>
-                                <li>
-                                    <a href="#blog">Publicaciones</a>
-                                </li>
-                                <li>
-                                    <a href="#testimonial">Testimonial</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contacto</a>
-                                </li>
-                            </ul>
-                        </div><!-- end Menu -->
-                    </div>
-                </div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-        <!-- end Sidebar -->
+       
         <!-- About section -->
         <section id="about">
             <div class="about-background">
@@ -84,20 +34,23 @@
 								<!-- Button Contact Modal -->
                                 <a data-target="#callmeModal" 
                                    data-toggle="modal" 
-                                   href="#" 
-                                   class="btn btn-warning">
-								    <span aria-hidden="true" class="icon_phone"></span>
+                                   href="tel:+526461896922" 
+                                   class="btn btn-outline-danger">
+                                   <i class="fa fa-phone"></i>
 								</a>
 								<!-- Button 'Hire me' -->
-								<a href="#contact" class="btn btn-success">
-                                    <i class="icon icon_mail"></i>
+								<a href="#contact" class="btn btn-outline-success">
+                                    <i class="fa fa-envelope"></i>
                                 </a>
+                                <button class="btn btn-outline-info" (click)="printPage()"><i class="fa fa-print"></i></button>
                             </div>
                             <h1>Julio C&eacute;sar Melchor Pinto</h1>
-                            <label class="badge">F&iacute;sico</label>
-                            <label class="badge">Climat&oacute;logo</label>
-                            <label class="badge">Desarrollador</label>
-                            <label class="badge">Consultor</label>
+                            <div class="badges">
+                                <label class="badge badge-success mr-1">F&iacute;sico</label>
+                                <label class="badge badge-info mr-1">Climat&oacute;logo</label>
+                                <label class="badge badge-primary mr-1">Desarrollador</label>
+                                <label class="badge badge-warning mr-1">Consultor</label>
+                            </div>
                             <div class="section-title">
                                 <h2><span>01</span>Informaci&oacute;n</h2>
 							</div><!-- end Section Title -->
@@ -108,213 +61,166 @@
 							
                             <div class="skills">
                                 <!-- Skill 1 -->
-                                <div class="skill-outer">
-                                    <h4>C/C++<span>70%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="70" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 70%;">
+                                <div class="row-fluid">
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>C/C++</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="70" type="warning" [striped]="true">70%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Skill 2 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>C# / Razor</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="85" type="warning" [striped]="true">85%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end row -->
+                                <div class="row-fluid">
+                                    <!-- Skill 3 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Fortran 77/90</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="85" type="warning" [striped]="true">95%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Skill 4 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Objective-C</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="65" type="warning" [striped]="true">65%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Skill 2 -->
-                                <div class="skill-outer">
-                                    <h4>C# / Razor<span>85%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="85" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 85%;">
+                                <div class="row-fluid">
+                                    <!-- Skill 5 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Swift</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="80" type="warning" [striped]="true">80%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Skill 6 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>MS-SQL / MySQL / SQLite</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="80" type="warning" [striped]="true">80%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end row -->
+                                <div class="row-fluid">
+                                    <!-- Skill 7 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>HTML5</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="85" type="warning" [striped]="true">95%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Skill 8 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>CSS / SCSS / SASS</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="90" type="warning" [striped]="true">90%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Skill 3 -->
-                                <div class="skill-outer">
-                                    <h4>Fortran 77/90<span>95%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="95" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 95%;">
+                                <div class="row-fluid">
+                                    <!-- Skill 9 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Java</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="95" type="warning" [striped]="true">95%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Skill 10 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>JavaScript / AngularJS / ReactJS</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="85" type="warning" [striped]="true">85%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Skill 4 -->
-                                <div class="skill-outer">
-                                    <h4>Objective-C<span>65%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="65" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 65%;">
+                                <div class="row-fluid">
+                                    <!-- Skill 11 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Typescript / Angular / React</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="90" type="warning" [striped]="true">90%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- Skill 12 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>TeX</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="90" type="warning" [striped]="true">90%</progressbar>
+                                            </div>
+                                        </div>
+                                    </div>                           
                                 </div>
-                                <!-- Skill 5 -->
-                                <div class="skill-outer">
-                                    <h4>Swift<span>80%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="80" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 80%;">
+                                <div class="row-fluid">
+                                    <!-- Skill 13 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Bash</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="85" type="warning" [striped]="true">85%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Skill 6 -->
-                                <div class="skill-outer">
-                                    <h4>MS-SQL / MySQL / SQLite<span>80%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="80" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 80%;">
+                                    <!-- Skill 14 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>.NET / ASP.NET</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="90" type="warning" [striped]="true">90%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Skill 7 -->
-                                <div class="skill-outer">
-                                    <h4>HTML5<span>95%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="95" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 95%;">
+                                    </div>
+                                    <div class="row-fluid">
+                                        <!-- Skill 15 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>NCL</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="70" type="warning" [striped]="true">70%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Skill 8 -->
-                                <div class="skill-outer">
-                                    <h4>CSS / SCSS / SASS<span>90%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="90" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 90%;">
+                                    <!-- Skill 16 -->
+                                    <div class="col-sm-12">
+                                        <div class="skill-outer">
+                                            <h4>Kotlin</h4>
+                                            <div class="mb-2">
+                                                <progressbar [value]="50" type="warning" [striped]="true">50%</progressbar>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Skill 9 -->
-                                <div class="skill-outer">
-                                    <h4>Java<span>95%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="95" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 95%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 10 -->
-                                <div class="skill-outer">
-                                    <h4>JavaScript / AngularJS / ReactJS<span>85%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="85" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 85%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 11 -->
-                                <div class="skill-outer">
-                                    <h4>Typescript / Angular / React<span>90%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="90" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 90%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 12 -->
-                                <div class="skill-outer">
-                                    <h4>TeX<span>90%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="90" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 90%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 13 -->
-                                <div class="skill-outer">
-                                    <h4>Bash<span>85%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="85" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 85%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 14 -->
-                                <div class="skill-outer">
-                                    <h4>.NET / ASP.NET<span>90%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="90" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 90%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 15 -->
-                                <div class="skill-outer">
-                                    <h4>NCL<span>70%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="70" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 70%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Skill 16 -->
-                                <div class="skill-outer">
-                                    <h4>Kotlin<span>50%</span></h4>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar"
-                                             role="progressbar" 
-                                             aria-valuenow="50" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
-                                             style="width: 50%;">
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div><!-- end row -->
@@ -323,6 +229,147 @@
         </section>
         <!-- end About section -->
         
+        <!-- Resume section -->
+        <section id="education">
+            <div class="resume-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
+                            <!-- Section Title -->
+                            <div class="section-title">
+                                <h2><span>02</span>Educaci&oacute;n</h2>
+                            </div><!-- end Section Title -->
+                            <!-- Resume box 1 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/unam.png" height="70">
+                                </div>
+                                <div>
+                                    <h3>Universidad Nacional Aut&oacute;noma de M&eacute;xico</h3>
+                                    <span>2016-2020</span>
+                                    <p>Doctorado en Ciencias de la Tierra con especialidad en Ciencias
+                                       de la Atmosf&eacute;ricas, Planetarias y Espaciales.</p>
+                                    <p>Grupo de Modelos Clim&aacute;ticos</p>
+                                    <p>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</p>  
+                                    <p>An&aacute;lisis, diseño e implementaci&oacute;n de un
+                                        <a target="_blank" href="https://dgapa.unam.mx/images/papiit/transparencia/proyxanio/2018/IN102415_Informe_Final_2015.pdf">modelo termodin&aacute;mico de clima</a> a escala global.</p>
+                                </div>
+                            </div>
+                            <!-- Resume box 2 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/unam.png" height="70">
+                                </div>
+                                <div>
+                                    <h3>Universidad Nacional Aut&oacute;noma de M&eacute;xico</h3>
+                                    <span>2011-2013</span>
+                                    <p>Mestr&iacute;a en Ciencias de la Tierra con especialidad en Ciencias
+                                        de la Atmosf&eacute;ricas, Planetarias y Espaciales.</p>
+                                    <p>Grupo de Modelos Clim&aacute;ticos</p>
+                                    <p>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</p> 
+                                    <p>Pron&oacute;stico estacional de temperatura y precipitaci&oacute;n usando el Modelo Termodin&aacute;mico de Clima con &eacute;nfasis en la Rep&uacute;blica Mexicana.</p>
+                                </div>
+                            </div>
+                            <!-- Resume box 3 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/uabc.png" height="90">
+                                </div>
+                                <div>
+                                    <h3>Universidad Aut&oacute;noma de Baja California</h3>
+                                    <span>2005-2009</span>
+                                    <p>Licenciatura en F&iacute;sica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div>
+        </section>
+        <!-- end Resume section -->
+
+         <!-- Resume section -->
+         <section id="industry">
+            <div class="resume-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
+                            <!-- Section Title -->
+                            <div class="section-title">
+                                <h2><span>03</span>Industria</h2>
+                            </div><!-- end Section Title -->
+                            <!-- Resume box 1 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/guerrero_floral.png" width="80">
+                                </div>
+                                <div>
+                                    <h3>Guerrero Floran and Sea Designs S. de R. de C.V.</h3>
+                                    <span>2019</span>
+                                    <p>Gerente de Sistemas de Información.</p>
+                                    <p>An&aacute;lisis y reestructuraci&oacute;n de procesos de producci&oacute;n,
+                                        control de mermas y manejo de personal implementando tecnolog&iacute;as de la informaci&oacute;n.</p>
+                                </div>
+                            </div>
+                            <!-- Resume box 2 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/okunoba.png" width="80">
+                                </div>
+                                <div>
+                                    <h3>Grupo Okunoba S.A. de C.V.</h3>
+                                    <span>2018</span>
+                                    <p>Desarrollador .NET</p>
+                                    <p>An&aacute;lisis, diseño, desarrollo e implementaci&oacute;n de un sistema
+                                        personalizado para el control de inventarios para el uso dentro de la empresa con usuarios, roles y restricciones.
+                                        Tecnolog&iacute;as usadas: Microsoft .NET Core, Microsoft SQL Server, Apache2.</p>
+                                </div>
+                            </div>
+                            <!-- Resume box 3 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/softtek.gif" width="80">
+                                </div>
+                                <div>
+                                    <h3>Softtek</h3>
+                                    <span>2017</span>
+                                    <p>Desarrollador Jr.</p>
+                                    <p>An&aacute;lisis, diseño en implementaci&oacute;n de un sistema administrativo para restaurantes (backoffice y aplicación m&oacute;vil)
+                                       Tecnologias usadas: OutSystems, Microsoft Teams, ASP.NET, NodeJS, AngularJS, MonoDevelop.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Resume box 4 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/freelancer.png" width="90">
+                                </div>
+                                <div>
+                                    <h3>Freelancer.com</h3>
+                                    <span>2017</span>
+                                    <p>Desarrollador de Android</p>
+                                    <p>Desarrollo de una aplicaci&oacute;n m&oacute;vil para Android usando Google Maps API en Android Studio.</p>
+                                </div>
+                            </div>
+                            <!-- Resume box 5 -->
+                            <div class="resume-box">
+                                <div>
+                                    <img src="/assets/images/unam.png" height="70">
+                                </div>
+                                <div>
+                                    <h3>Universidad Nacional Aut&oacute;noma de M&eacute;xico</h3>
+                                    <span>2016</span>
+                                    <p><a href="http://www.fciencias.unam.mx/directorio/83353" target="_blank">Profesor de Asignatura A</a></p>
+                                    <p>Profesor de la Facultad de Ciencias en la asignatura Modelaci&oacute;n Clim&aacute;tica de la Licenciatura en Ciencias de la Tierra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div>
+        </section>
+        <!-- end Resume section -->
 
 
 
@@ -335,62 +382,69 @@
                         <div class="col-xs-12 col-sm-9 col-sm-offset-3 servicesWrapper">
                             <!-- Section Title -->
                             <div class="section-title">
-                                <h2><span>02</span>Servicios</h2>
+                                <h2><span>04</span>Servicios</h2>
                             </div><!-- end Section Title -->
                             <!-- Service box 1 -->
-                            <div class="service-box">
-                                <div>
-                                    <i class="icon icon_building_alt"></i>
-                                </div>
-                                <div>
-                                    <h3>Desarrollo en negocios</h3>
-                                    <p>Analista y desarrollador de sistemas de inventarios
-                                       y trazabilidad de productos, aplicaciones de control de personal,
-                                       puntos de venta y servicios administrativos. 
-                                       Creaci&oacute;n, migraci&oacute;n, respaldo y
-                                       optimizaci&oacute;n de bases de datos.
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Service box 2 -->
-                            <div class="service-box">
-                                <div>
-                                    <i class="icon icon_pens"></i>
-                                </div>
-                                <div>
-                                    <h3>Docencia</h3>
-                                    <p>Clases particulares, creador de contenidos y educaci&oacute;n continua con
-                                       especialidad en ciencias exactas, filosof&iacute;a y tecnolog&iacute;as de la
-                                       informaci&oacute;n. Atenci&oacute;n a estudiantes con discapacidad en lengua
-                                       de señas y braille.</p>
+                            <div class="row">
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon icon_building_alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Desarrollo en negocios</h3>
+                                        <p>Analista y desarrollador de sistemas de inventarios
+                                            y trazabilidad de productos, aplicaciones de control de personal,
+                                            puntos de venta y servicios administrativos.
+                                            Creaci&oacute;n, migraci&oacute;n, respaldo y
+                                            optimizaci&oacute;n de bases de datos.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Service box 3 -->
-                            <div class="service-box">
-                                <div>
-                                    <i class="icon social_myspace"></i>
-                                </div>
-                                <div>
-                                    <h3>Conectividad y SEO</h3>
-                                    <p>Mercadotecnia de redes sociales, posicionamiento en motores de b&uacute;squeda.
-                                       Servicios en nube como an&aacute;lisis de contenido, estad&iacute;sticas de uso,
-                                       administraci&oacute;n del cliente.
-                                    </p>
+                            <div class="row">
+                                <!-- Service box 2 -->
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon icon_pens"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Docencia</h3>
+                                        <p>Clases particulares, creador de contenidos y educaci&oacute;n continua con
+                                            especialidad en ciencias exactas, filosof&iacute;a y tecnolog&iacute;as de la
+                                            informaci&oacute;n. Atenci&oacute;n a estudiantes con discapacidad en lengua
+                                            de señas y braille.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Service box 4 -->
-                            <div class="service-box">
-                                <div>
-                                    <i class="icon icon_mobile"></i>
+                            <div class="row">
+                                <!-- Service box 3 -->
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon social_myspace"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Conectividad y SEO</h3>
+                                        <p>Mercadotecnia de redes sociales, posicionamiento en motores de b&uacute;squeda.
+                                            Servicios en nube como an&aacute;lisis de contenido, estad&iacute;sticas de uso,
+                                            administraci&oacute;n del cliente.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>Desarrollo</h3>
-                                    <p>Creaci&oacute;n de aplicaciones m&oacute;viles en iOS y Android.</p>
+                            </div>
+                            <div class="row">
+                                <!-- Service box 4 -->
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon icon_mobile"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Desarrollo</h3>
+                                        <p>Creaci&oacute;n de aplicaciones m&oacute;viles en iOS y Android.</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- end Service box 4 -->
-                        </div>
+                            </div>
                     </div><!-- end row -->
                 </div><!-- end container -->
             </div>
@@ -401,60 +455,62 @@
             <div class="tech-background">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-9 col-sm-offset-3">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 techWrapper">
                             <div class="section-title">
-                                <h2 class="pull-left"><span>03</span>Entornos de trabajo</h2>
+                                <h2><span>05</span>Entornos de trabajo</h2>
                             </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="thumbnails col-sm-offset-3">
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/xcode.png" alt="">
+                            <div class="row">
+                                <div class="tech-box">
+                                    <div class="thumbnails">
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/xcode.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/visual-studio.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/visual-studio-code.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images//android-studio.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/net-beans.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/bash.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/azure.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/google-analytics.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/google-cloud.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/firebase.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/github.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/outsystems.jpeg" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/raspberry-pi.svg" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/images/angular.png" alt="">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img class="img-fluid img-thumbnail" src="assets/image/sreact.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/visual-studio.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/visual-studio-code.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images//android-studio.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/net-beans.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/bash.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/azure.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/google-analytics.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/google-cloud.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/firebase.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/github.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/outsystems.jpeg" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/raspberry-pi.svg" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/images/angular.png" alt="">
-                                </div>
-                                <div class="thumbnail">
-                                    <img class="img-fluid img-thumbnail" src="assets/image/sreact.png" alt="">
-                                </div>                             
                             </div>
-                        </div>                                          
+                            </div>
                     </div>
                 </div>
             </div>
@@ -467,7 +523,7 @@
                         <div class="col-xs-12 col-sm-9 col-sm-offset-3 portfolioWrapper">
                             <!-- Section Title -->
                             <div class="section-title">
-                                <h2 class="pull-left"><span>04</span>Portafolio</h2>
+                                <h2 class="pull-left"><span>06</span>Portafolio</h2>
 								<div class="portfolio-filter pull-right">
                                 <ul>
                                     <li class="btn btn-default filter active" data-filter="all">Todos</li><!--
@@ -641,147 +697,6 @@
         </section>
         <!-- end Portfolio section -->
 
-        <!-- Resume section -->
-        <section id="education">
-            <div class="resume-background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
-                            <!-- Section Title -->
-                            <div class="section-title">
-                                <h2><span>05</span>Educaci&oacute;n</h2>
-                            </div><!-- end Section Title -->
-                            <!-- Resume box 1 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/unam.png" height="70">
-                                </div>
-                                <div>
-                                    <h3>Universidad Nacional Aut&oacute;noma de M&eacute;xico</h3>
-                                    <span>2016-2020</span>
-                                    <p>Doctorado en Ciencias de la Tierra con especialidad en Ciencias
-                                       de la Atmosf&eacute;ricas, Planetarias y Espaciales.</p>
-                                    <p>Grupo de Modelos Clim&aacute;ticos</p>
-                                    <p>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</p>  
-                                    <p>An&aacute;lisis, diseño e implementaci&oacute;n de un
-                                        <a target="_blank" href="https://dgapa.unam.mx/images/papiit/transparencia/proyxanio/2018/IN102415_Informe_Final_2015.pdf">modelo termodin&aacute;mico de clima</a> a escala global.</p>
-                                </div>
-                            </div>
-                            <!-- Resume box 2 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/unam.png" height="70">
-                                </div>
-                                <div>
-                                    <h3>Universidad Nacional Aut&oacute;noma de M&eacute;xico</h3>
-                                    <span>2011-2013</span>
-                                    <p>Mestr&iacute;a en Ciencias de la Tierra con especialidad en Ciencias
-                                        de la Atmosf&eacute;ricas, Planetarias y Espaciales.</p>
-                                    <p>Grupo de Modelos Clim&aacute;ticos</p>
-                                    <p>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</p> 
-                                    <p>Pron&oacute;stico estacional de temperatura y precipitaci&oacute;n usando el Modelo Termodin&aacute;mico de Clima con &eacute;nfasis en la Rep&uacute;blica Mexicana.</p>
-                                </div>
-                            </div>
-                            <!-- Resume box 3 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/uabc.png" height="90">
-                                </div>
-                                <div>
-                                    <h3>Universidad Aut&oacute;noma de Baja California</h3>
-                                    <span>2005-2009</span>
-                                    <p>Licenciatura en F&iacute;sica.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div>
-        </section>
-        <!-- end Resume section -->
-
-         <!-- Resume section -->
-         <section id="industry">
-            <div class="resume-background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
-                            <!-- Section Title -->
-                            <div class="section-title">
-                                <h2><span>06</span>Industria</h2>
-                            </div><!-- end Section Title -->
-                            <!-- Resume box 1 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/guerrero_floral.png" width="80">
-                                </div>
-                                <div>
-                                    <h3>Guerrero Floran and Sea Designs S. de R. de C.V.</h3>
-                                    <span>2019</span>
-                                    <p>Gerente de Sistemas de Información.</p>
-                                    <p>An&aacute;lisis y reestructuraci&oacute;n de procesos de producci&oacute;n,
-                                        control de mermas y manejo de personal implementando tecnolog&iacute;as de la informaci&oacute;n.</p>
-                                </div>
-                            </div>
-                            <!-- Resume box 2 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/okunoba.png" width="80">
-                                </div>
-                                <div>
-                                    <h3>Grupo Okunoba S.A. de C.V.</h3>
-                                    <span>2018</span>
-                                    <p>Desarrollador .NET</p>
-                                    <p>An&aacute;lisis, diseño, desarrollo e implementaci&oacute;n de un sistema
-                                        personalizado para el control de inventarios para el uso dentro de la empresa con usuarios, roles y restricciones.
-                                        Tecnolog&iacute;as usadas: Microsoft .NET Core, Microsoft SQL Server, Apache2.</p>
-                                </div>
-                            </div>
-                            <!-- Resume box 3 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/softtek.gif" width="80">
-                                </div>
-                                <div>
-                                    <h3>Softtek</h3>
-                                    <span>2017</span>
-                                    <p>Desarrollador Jr.</p>
-                                    <p>An&aacute;lisis, diseño en implementaci&oacute;n de un sistema administrativo para restaurantes (backoffice y aplicación m&oacute;vil)
-                                       Tecnologias usadas: OutSystems, Microsoft Teams, ASP.NET, NodeJS, AngularJS, MonoDevelop.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Resume box 4 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/freelancer.png" width="90">
-                                </div>
-                                <div>
-                                    <h3>Freelancer.com</h3>
-                                    <span>2017</span>
-                                    <p>Desarrollador de Android</p>
-                                    <p>Desarrollo de una aplicaci&oacute;n m&oacute;vil para Android usando Google Maps API en Android Studio.</p>
-                                </div>
-                            </div>
-                            <!-- Resume box 5 -->
-                            <div class="resume-box">
-                                <div>
-                                    <img src="/assets/images/unam.png" height="70">
-                                </div>
-                                <div>
-                                    <h3>Universidad Nacional Aut&oacute;noma de M&eacute;xico</h3>
-                                    <span>2016</span>
-                                    <p><a href="http://www.fciencias.unam.mx/directorio/83353" target="_blank">Profesor de Asignatura A</a></p>
-                                    <p>Profesor de la Facultad de Ciencias en la asignatura Modelaci&oacute;n Clim&aacute;tica de la Licenciatura en Ciencias de la Tierra.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div>
-        </section>
-        <!-- end Resume section -->
         <!-- Blog section -->
         <section id="blog">
             <div class="blog-background">

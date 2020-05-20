@@ -1,24 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { PrintPageComponent } from './pages/print-page/print-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { ProgressbarModule } from "ngx-bootstrap/progressbar";
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    PrintPageComponent
+    PrintPageComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ButtonsModule,
-    FormsModule
+    ButtonsModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

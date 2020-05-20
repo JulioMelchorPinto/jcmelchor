@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "jcmelchor"
+  "defaultProject": "jcmelchor",
+  "cli": {
+    "analytics": "df0be5e7-df8a-4c11-8015-bf296887635f"
+  }
 }
