@@ -1,6 +1,6 @@
 .sidebar {
-    padding: 0;
-    position: relative;
+    padding-left: 30px;
+    position: fixed;
     top: 0;
 }
 .sidebarWrapper {
@@ -9,7 +9,7 @@
     height: 100%;
     box-shadow: 0 3px 10px 3px rgba(1, 80, 73, 0.603);
     color: #fff;
-    padding: 27px 0 0;
+    padding: 15px 0 0;
 }
 .user-pic {
     border-radius: 140px;
@@ -28,7 +28,6 @@
 .sidebar .nav {
     padding: 20px 30px;
 	background: #fff none repeat scroll 0 0;
-    padding: 20px 30px;
 }
 .toggle-btn {
     cursor: pointer;
@@ -43,15 +42,6 @@
 
 .toggle-btn:focus {
     outline: 0 none;
-}
-
-.fixed {
-    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
-    left: 30px;
-    position: fixed;
-    right: 30px;
-    top: 0;
-    width: auto;
 }
 .lines, .lines::after, .lines::before {
     background: #fff none repeat scroll 0 0;
@@ -84,7 +74,7 @@
 .sidebar .nav li {
     font: 900 13px "Titillium Web",serif;
     padding: 10px 0;
-    display: list-item;
+    display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -100,12 +90,12 @@
 }
 .signature {
     text-align: center;
-    padding: 9px 0 12px;
+    padding: 9px 20px 12px;
     
 }
 .signature .img-responsive {
     margin: auto;
-    width: 95%;
+    width: 90%;
 }
 
 .toggle-close .lines {
@@ -120,4 +110,14 @@
 }
 .toggle-close .lines::after {
     transform: rotate3d(0, 0, 1, -45deg);
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+    .container-fluid {
+        display: none;
+    }
+    
 }

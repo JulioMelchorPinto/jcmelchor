@@ -74,3 +74,13 @@
     height: 100%;
 }
 }
+
+@media only screen and (max-width: 800px) {
+    /* .fixed-left-contact,.fixed-right-socials {
+        display: none;
+    } */
+    app-main-page {
+        padding-left: -100px;
+    }
+    
+}

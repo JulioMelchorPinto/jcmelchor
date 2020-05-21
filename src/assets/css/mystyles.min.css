@@ -1,10 +1,5 @@
 
-a{
-	color:#0366a0;
-}
-a:hover{
-	color:#704b07;
-}
+
 .greynum {
     color: rgba(0, 0, 0, 0.541);
     float: left;
@@ -16,26 +11,12 @@ body {
     font: 300 14px open sans,sans-serif;
     letter-spacing: 0.5px;
     overflow-x: hidden;
+    background-color: #f5f5f5;
 }
 h1, h2, h3, h4, h5 {
     color: #025d74;
 	font-family: 'Titillium Web', sans-serif;
 }
-.section-title h2::after {
-   background: #007a99 none repeat scroll 0 0;
-    content: "";
-    display: table;
-    height: 2px;
-    left: 28px;
-    position: absolute;
-    width: 40px;
-}
-.section-title span {
-    color: #5c5c5c;
-    font: 500 14px open sans,sans-serif;
-    padding-right: 10px;
-}
-
 
 
 
@@ -55,26 +36,7 @@ h1, h2, h3, h4, h5 {
     border-color: #16464d;
 }
 
-.left-br {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 20px;
-}
-.fixed-left-contact {
-    height: 100%;
-    left: 0;
-    position: fixed;
-    width: 20px;
-    z-index: 100;
-}
-.fixed-left-contact p {
-    left: -56px;
-    letter-spacing: 2px;
-    position: absolute;
-    top: 50%;
-    transform: rotate(-90deg);
-}
+
 textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, .form-control[type="text"]:focus, .form-control[type="password"]:focus, .form-control[type="email"]:focus, .form-control[type="tel"]:focus, .form-control[contenteditable]:focus {
     box-shadow: 0 -2px 0 #288a02 inset;
 }
